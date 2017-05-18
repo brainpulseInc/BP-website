@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact - Brainpulse</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./img/favicons/manifest.json">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="./js/jquery.min.js"></script>-->
+    <script type='text/javascript' src="./js/form_c.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+
+<body id="contact">
+<header>
+    <div class="top">
+        <a href="./index.html" class="logo">Brainpulse</a>
+        <a class="button-menu tcon tcon-menu--xcross" aria-label="toggle menu">
+            <span class="tcon-menu__lines" aria-hidden="true"></span>
+            <span class="tcon-visuallyhidden">toggle menu</span>
+        </a>
+    </div>
+
+    <nav id="main-menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./digital-transformation.html">Digital transformation</a></li>
+            <!--<li><a href="#">Training</a></li>-->
+            <!-- <li><a href="./clients.html">Clients</a></li> -->
+            <!-- <li><a href="./blog-roll.html">The pulse</a></li> -->
+            <li><a href="./about.html">About us</a></li>
+            <li><a class="active" href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="pictureSection small">
+        <img src="./img/header/contact.jpg" alt="">
+        <h1>Contact</h1>
+    </div>
+    <div class="contentSection">
+        <div class="breadcrumb">
+            <a class="first" href="#">Home</a>
+            /
+            <span>Contact</span>
+        </div>
+        <section>
+            <h2>We Look Forward to Hearing from You</h2>
+            <p class="intro">Get more information about Brainpulse, learn how to get started, and let us know how we can help you get there. Contact us today!</p>
+        </section>
+
+        <div class="separation"></div> <!-- Separation -->
+
+        <section>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="content">
+                        <h2 class="title">Contact us</h2>
+                        <form action="send.php" method="post" id='contact_form'>
+                            <label>First name<input id="firstname" name="firstname" type="text"></label>
+                            <label>Last name<input id="lastname" name="lastname" type="text"></label>
+                            <label>Email address<input id="email" name="email" type="text"></label>
+                            <label>Title<input id="title" name="title" type="text"></label>
+                            <label>Company<input id="company" name="company" type="text"></label>
+                            <label>Phone number<input id="phone" name="phone" type="text"></label>
+                            <label>How can Brainpulse help you ?<textarea id="message" name="message"></textarea></label>
+                            <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LerkicTAAAAAIRM-51lwA2XFXAXOKREjh_AH6Ku" style="text-align: center;"></div>
+                            <p id="returnmessage"></p>
+                            <input type="submit" id="send_message" disabled="disabled" style="opacity:0.4;" value="submit">
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="infos">
+                        <span class="picto tel">1.844.427.2466</span>
+                        <span class="picto mail">info@brainpulse.ca</span>
+                        <span class="picto location">4239 Jean Talon West<br />Montreal, QC<br />H4P 0A5</span>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.5085585205443!2d-73.65013968427077!3d45.499840239085394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc919cf89eadf3f%3A0x59bc73726727ab59!2s4239+Rue+Jean-Talon+O%2C+Montr%C3%A9al%2C+QC+H4P+0A5!5e0!3m2!1sfr!2sca!4v1466448835044" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div> <!-- /row -->
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="inside">
+        <div class="col-sm-9 col-xs-12 left">
+            <p>© 2016 Brainpulse - All rights reserved - <a href="tel:1.844.427.2466">1.844.427.2466</a> - <a href="./contact.html">contact us</a></p>
+        </div>
+        <div class="col-sm-3 col-xs-12 pull-right">
+            <ul class="social">
+                <li><a class="lk" target="_blank" href="https://www.linkedin.com/company/brainpulse-consulting">LinkedIn</a></li>
+                <li><a class="tw" target="_blank" href="https://twitter.com/brainpulseinc">Twitter</a></li>
+                <li><a class="fb" target="_blank" href="https://www.facebook.com/brainpulseconsulting/">Facebook</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script>
+    function recaptchaCallback() {
+        $('#send_message').removeAttr('disabled').css("opacity","1");
+    };
+    
+</script>
+<script type="text/javascript">
+var RecaptchaOptions = {
+   lang : 'en',
+};
+</script>
+</body>
+</html>
