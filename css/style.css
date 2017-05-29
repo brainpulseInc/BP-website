@@ -1,12 +1,9 @@
 @import url("../scss/variables.scss");
 @import url("../css/icon-menu.css");
-/*@import url("../node_modules/normalize.css/normalize.css");
-@import url("../node_modules/bootstrap/dist/css/bootstrap.css");*/
+@import url("../css/normalize.css");
+@import url("../css/bootstrap.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
-/*
-  Variables
-*/
 /*
     GENERAL
 */
@@ -22,7 +19,6 @@ body {
   font-size: 18px;
   line-height: 28px;
   padding-top: 80px; }
-
 a,
 input,
 button {
