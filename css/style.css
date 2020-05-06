@@ -518,7 +518,7 @@ body.menu-active {
   body.menu-active .top {
     margin-left: -400px; }
     body.menu-active .top .button-menu {
-      margin-right: 400px; }
+      margin-right: 320px; }
   body.menu-active #main-menu {
     right: 0; }
 
@@ -527,8 +527,8 @@ body.menu-active {
 */
 #main-menu {
   background: #31a3d2;
-  width: 400px;
-  right: -400px;
+  width: 300px;
+  right: -300px;
   top: 0;
   height: 100%;
   position: fixed;
@@ -1426,7 +1426,7 @@ footer {
   body.menu-active {
     margin-left: -100px; }
     body.menu-active #main-menu {
-      right: -130px; }
+      right: -330px; }
     body.menu-active .top .button-menu {
       margin-right: 270px; }
   header {
