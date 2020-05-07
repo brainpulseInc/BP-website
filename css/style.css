@@ -1426,7 +1426,7 @@ footer {
   body.menu-active {
     margin-left: -100px; }
     body.menu-active #main-menu {
-      right: -330px; }
+      right: -30px; }
     body.menu-active .top .button-menu {
       margin-right: 270px; }
   header {
