@@ -160,6 +160,30 @@
                             </div>
                         <a href="mailto:reda@brainpulse.ca" class="mail">Send mail</a>
                     </li>
+                    <li class="div col-md-6 person" id="jp">
+                        <div class="content">
+                            <div class="col-sm-4 col-xs-12">
+                                <img class="photo" src="./img/leadership/jp.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                                <h3 class="subtitle black">Jean-Philippe Lauzon</h3>
+                                <p>Principal Consultant - Technology</p>
+                            </div>
+                        </div>
+                        <!-- <a href="mailto:reda@brainpulse.ca" class="mail">Send mail</a> -->
+                    </li>
+                    <li class="div col-md-6 person" id="phil">
+                        <div class="content">
+                            <div class="col-sm-4 col-xs-12">
+                                <img class="photo" src="./img/leadership/phil.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                                <h3 class="subtitle black">Philip Tabah</h3>
+                                <p>Creative Director</p>
+                            </div>
+                        </div>
+                        <!-- <a href="mailto:reda@brainpulse.ca" class="mail">Send mail</a> -->
+                    </li>
                 </ul>
             </div>
             <br><br>
@@ -273,10 +297,12 @@
     $( document ).ready(function(){
         $('.leadershipLayout .person .content').click(function(){
             var showPerson = $(this).parent().attr('id');
-            $('.box-leadership.'+showPerson).addClass('show');
-            $('html, body').animate({
-                scrollTop: $("#top").offset().top
-            }, 300);
+            if($('.box-leadership.'+showPerson).length > 0){
+                $('.box-leadership.'+showPerson).addClass('show');
+                $('html, body').animate({
+                    scrollTop: $("#top").offset().top
+                }, 300);
+            }
         });
         $('.box-leadership .tcon-menu--xcross').click(function(){
             $(this).parent().removeClass('show');
