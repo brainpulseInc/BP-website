@@ -865,6 +865,7 @@ body.menu-active {
           flex-wrap: wrap; }
   .leadershipLayout li {
     position: relative;
+    margin-bottom: 30px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
