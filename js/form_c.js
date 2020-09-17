@@ -68,8 +68,7 @@
             
                 $('#send_message').attr({'disabled' : 'true', 'value' : 'Sending...' });
 
-                $.post("send.php", $('#contact_form').serialize(),function(result){
-                console.log(result);
+                $.post("https://formspree.io/xzbkpyrq", $('#contact_form').serialize(),function(result){
                     if(result === 'Your message has been sent successfully.'){
                       $('#contact #returnmessage').text(chainesuccess);
                       $('#send_message').remove();
