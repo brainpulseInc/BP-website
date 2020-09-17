@@ -76,7 +76,7 @@
                             <label>How can Brainpulse help you ?<textarea id="message" name="message" required></textarea></label>
                             <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LcnKs0ZAAAAADc9rFfzYnxB-rhRxjzwcXJlZEJQ" style="text-align: center;"></div>
                             <p id="returnmessage"></p>
-                            <input type="submit" disabled="disabled" style="opacity:0.4;" value="submit">
+                            <input id="send_form" type="submit" disabled="disabled" style="opacity:0.4;" value="submit">
                             <!-- <input type="submit" id="send_message" disabled="disabled" style="opacity:0.4;" value="submit"> -->
                         </form>
                         
@@ -112,7 +112,7 @@
 </footer>
 <script>
     function recaptchaCallback() {
-        $('#send_message').removeAttr('disabled').css("opacity","1");
+        $('#send_form').removeAttr('disabled').css("opacity","1");
     };
     
 </script>
