@@ -67,16 +67,17 @@
                     <div class="content">
                         <h2 class="title">Contact us</h2>
                         <form action="https://formspree.io/xzbkpyrq" method="POST" id='contact_form'>
-                            <label>First name<input id="firstname" name="firstname" type="text"></label>
-                            <label>Last name<input id="lastname" name="lastname" type="text"></label>
-                            <label>Email address<input id="email" name="email" type="text"></label>
+                            <label>First name<input id="firstname" name="firstname" type="text" required></label>
+                            <label>Last name<input id="lastname" name="lastname" type="text" required></label>
+                            <label>Email address<input id="email" name="email" type="text" required></label>
                             <label>Title<input id="title" name="title" type="text"></label>
                             <label>Company<input id="company" name="company" type="text"></label>
-                            <label>Phone number<input id="phone" name="phone" type="text"></label>
-                            <label>How can Brainpulse help you ?<textarea id="message" name="message"></textarea></label>
+                            <label>Phone number<input id="phone" name="phone" type="tel" pattern="[0-9]{10}" required></label>
+                            <label>How can Brainpulse help you ?<textarea id="message" name="message" required></textarea></label>
                             <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LerkicTAAAAAIRM-51lwA2XFXAXOKREjh_AH6Ku" style="text-align: center;"></div>
                             <p id="returnmessage"></p>
-                            <input type="submit" id="send_message" disabled="disabled" style="opacity:0.4;" value="submit">
+                            <input type="submit" value="submit">
+                            <!-- <input type="submit" id="send_message" disabled="disabled" style="opacity:0.4;" value="submit"> -->
                         </form>
                         
                     </div>
