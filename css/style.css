@@ -1502,7 +1502,6 @@ footer {
 /* ✅ Mobile menu fix: only applies to screens below 768px */
 @media (max-width: 768px) {
   #main-menu {
-    width: 90vw !important;           /* give the menu panel more space */
     max-width: none !important;
     overflow-x: auto !important;      /* allow horizontal scroll if text still overflows */
     white-space: nowrap;
